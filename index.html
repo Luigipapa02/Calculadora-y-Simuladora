@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador de Dividendos CEDEAR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📈 Simulador de Dividendos CEDEAR 💸</h1>
+
+    <section class="section">
+      <h2>🧮 Calculadora de Dividendos</h2>
+      <label>Cantidad de CEDEARs: <input type="number" id="cantidadCedears"></label>
+      <label>Ratio CEDEAR (ej: 39): <input type="number" id="ratioCedear"></label>
+      <label>Dividendo anual por acción (USD): <input type="number" id="dividendoAnual"></label>
+      <button onclick="calcularDividendos()">Calcular</button>
+      <p id="resultadoCalculadora"></p>
+    </section>
+
+    <section class="section">
+      <h2>📊 Simulador de Crecimiento</h2>
+      <label>Cantidad inicial de CEDEARs: <input type="number" id="cedearsIniciales"></label>
+      <label>Precio actual de la acción (USD): <input type="number" id="precioAccion"></label>
+      <label>USD$ invertidos por mes en esta empresa: <input type="number" id="usdMensuales"></label>
+      <p id="infoCedearsAcciones"></p>
+      <label>Dividendo anual neto actual (USD): <input type="number" id="dividendoNetoActual"></label>
+      <label>Crecimiento anual estimado (%): <input type="number" id="crecimientoAnual"></label>
+      <label>Proyección a cuántos años: <input type="number" id="anios"></label>
+      <button onclick="simularCrecimiento()">Simular</button>
+      <div id="resultadoSimulador"></div>
+      <canvas id="graficoProyeccion" style="max-width: 100%; background-color: #fff; margin-top: 20px;"></canvas>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

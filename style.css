@@ -1,0 +1,66 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #39ff14;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #39ff14;
+  background-color: #111;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #39ff14;
+}
+
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #39ff14;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #39ff14;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+}
+
+button {
+  background-color: #39ff14;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+#resultadoCalculadora,
+#resultadoSimulador,
+#infoCedearsAcciones {
+  margin-top: 15px;
+  font-size: 1.1em;
+  color: #eee;
+}
